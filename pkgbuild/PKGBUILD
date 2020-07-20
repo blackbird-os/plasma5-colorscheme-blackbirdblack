@@ -1,0 +1,14 @@
+# $Id$
+# Maintainer: James Kittsmiller (AJSlye) <james@nulogicsystems.com>
+
+pkgname=plasma5-colorscheme-blackbirdblack
+pkgver=1.0
+pkgrel=1
+pkgdesc="A black colorscheme for Blackbird OS"
+arch=('any')
+url='https://github.com/blackbird-os/plasma5-colorscheme-blackbirdblack'
+license=('GPL')
+package() {
+  cd ../..
+  cp -aR usr $pkgdir/
+}
